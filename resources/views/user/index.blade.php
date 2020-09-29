@@ -26,7 +26,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    @include('admin.include.sidebar')
+    @include('user.partial.sidebar')
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -36,7 +36,7 @@
       <div id="content">
 
         <!-- Topbar -->
-        @include('admin.include.topbar')
+        @include('user.partial.topbar')
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
@@ -44,10 +44,11 @@
 
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800">Dashboard</h1>
+          <h4 class="h4 mb-4 text-gray-800">Welcome</h4>
               
         </div>
         <!-- /.container-fluid -->
 
       </div>
       <!-- End of Main Content -->
-@include('admin.include.footer')
+@include('user.partial.footer')

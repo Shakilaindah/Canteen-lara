@@ -22,6 +22,13 @@ Route::get('/loginn',function(){
 Route::get('/user',function(){
     return view('user.index');
 });
+Route::get('/makan','MakananController@tampil');
+Route::get('/transaksi','MakananController@showtrans');
+Route::post('/detailorder','MakananController@storee');
+// pdf
+// Route::get('/', 'PegawaiController@index');
+Route::get('/cetak_pdf', 'MakananController@cetak_pdf');
+Route::get('/detailtransaksi/{id_transaksi}','MakananController@edit_transaksi');
 Route::get('/admin',function(){
     return view('admin.index');
 });

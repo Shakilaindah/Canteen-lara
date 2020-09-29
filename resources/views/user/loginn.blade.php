@@ -15,7 +15,7 @@
     
 </head>
 
-<body style="background-color: #1e5f74;">
+<body style="background-color: #32e0c4;">
 
     <div class="container" style="margin-top: 2%;">
 
@@ -28,7 +28,7 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block" style="background-color: #1e5f74;"><img src="{{ asset('img/iconic.gif') }}" width="100%" style="margin-top: 25%;"></div>
+                            <div class="col-lg-6 d-none d-lg-block" style="background-color: #fafcc2;"><img src="{{ asset('img/iconic.gif') }}" width="100%" style="margin-top: 25%;"></div>
                             <div class="col-lg-6" style="padding-top: 10%; padding-bottom: 6%;">
                                 <div class="p-5" style="padding-top: 100%;">
                                     <div class="text-center">
@@ -61,7 +61,7 @@
                                         <!-- <button type="submit"  class="btn btn-user btn-block text-gray-900" style="background-color: #FCF0E2; border-radius: 10px;">
                                             Login
                                         </button> -->
-                                        <a class="btn btn-user btn-block text-gray-900" style="background-color: #FCF0E2; border-radius: 10px;" href="/admin" type="submit">Login</a>
+                                        <a class="btn btn-user btn-block text-gray-900" style="background-color: #FCF0E2; border-radius: 10px;" href="/user" type="submit">Login</a>
                                         <br>
                                         @if (Route::has('password.request'))
                                         <div class="text-center">

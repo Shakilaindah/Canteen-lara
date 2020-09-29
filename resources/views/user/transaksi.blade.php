@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2</title>
+  <title>SB Admin 2 - Blank</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,7 +35,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    @include('admin.include.sidebar')
+    @include('user.partial.sidebar')
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -45,23 +45,23 @@
       <div id="content">
 
         <!-- Topbar -->
-        @include('admin.include.topbar')
+        @include('user.partial.header')
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          {{-- <h1 class="h3 mb-4 text-gray-800 text-center">Table</h1> --}}
+          <!-- {{-- <h1 class="h3 mb-4 text-gray-800 text-center">Table</h1> --}} -->
           <!-- Begin Page Content -->
-        <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">LIST MAKANAN</h1>
-            <a href="/createmakanan/form" class="btn btn-primary">Tambah Makanan</a>
-          <p></p>
 
-          <!-- DataTales Example -->
+
+      <div class="container-fluid">
+        <h1 class="h3 mb-2 text-gray-800">Transaksi List</h1>
+        <a href="/cetak_pdf" class="btn btn-primary">PDF</a>
+        <p></p>
+            <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-body">
               <div class="table-responsive">
@@ -69,24 +69,40 @@
                   <thead>
                     <tr>
                       <th>No</th>
+                      <th>Id User</th>
+                      <th>Nama Pembeli</th>
+                      <th>Id Makanan</th>
                       <th>Nama Makanan</th>
                       <th>Harga</th>
-                      <th>Stok Makanan</th>
-                      <th>Gambar</th>
-                      <th>Action</th>
+                      <th>status</th>
+                      <th>Jumlah Makanan yang di beli</th>
+                      <th>Total Harga</th>
+                      <th>Pembayaran</th>
+                      <th>Kembalian</th>
+                      <th>Pilihan</th>
                     </tr>
                   </thead>
                   
                   <tbody>
-                    @foreach ($makanan as $u)
+                    @foreach ($detail as $m)
                     <tr>
-                      <th scope="row">{{ $u->id }}</th>
-                      <td>{{ $u->nama }}</td>
-                      <td>{{ $u->harga }}</td>
-                      <td>{{ $u->stok }}</td>
-                      <td><img src="{{ asset('assets/gambar_makanan/'. $u->gambar) }}" alt="{{ $u->gambar }}" width="30%" height="30%"></td>
-                      <td><a class="btn btn-primary " href="/edit/{{ $u->id}}">edit</a>
-                      <a class="btn btn-warning" href="/hapus/{{ $u->id }}">delete</a></td>
+                      <th scope="row">{{ $m->id_transaksi }}</th>    
+                      <td>{{ $m->id_user}}</td>                  
+                      <td>{{ $m->nama_pembeli }}</td>
+                      <td>{{ $m->id_makanan}}</td>
+                      <td>{{ $m->nama_menu }}</td>
+                      <td>{{ $m->harga }}</td>
+                      <td>{{ $m->stok }}</td>
+                      <td>{{ $m->jumlah_beli }}</td>
+                      <td>{{ $m->total_harga }}</td>
+                      <td>{{ $m->pembayaran }}</td>
+                      <td>{{ $m->kembalian }}</td>
+                      <!-- {{-- <td><img src="{{ asset('assets/gambar_makanan/'. $u->gambar) }}" alt="{{ $u->gambar }}" width="30%" height="30%"></td> --}}
+                      {{-- <td><a class="btn btn-primary " href="/edit/{{ $u->id}}">edit</a> --}} -->
+                      <td><a class="btn btn-danger" href="/hapuss/{{ $m->id_transaksi }}">delete</a>
+
+                      <!-- {{-- <td><a class="btn btn-primary " href="/beli/{{ $u->id}}">Beli</a> --}} -->
+                      <a class="btn btn-primary " href="/detailtransaksi/{{ $m->id_transaksi }}">Invoice</a></td>
                     </tr>
                   </tbody>
                   @endforeach
@@ -96,8 +112,6 @@
           </div>
 
         </div>
-        <!-- /.container-fluid -->
-
       </div>
       <!-- End of Main Content -->
-@include('admin.include.footer')
+@include('user.partial.footer')

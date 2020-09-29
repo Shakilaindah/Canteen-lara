@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Makanan extends Model
 {
-    //
+    protected $primarykey = 'id_makanan';
 }

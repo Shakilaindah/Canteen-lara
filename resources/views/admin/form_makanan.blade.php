@@ -68,7 +68,7 @@
     <div class="container pt-4">
             <div class="row">
                 <div class="col-md-8">
-                <form action="{{ url('/createmakanan') }}" method="POST">
+                <form action="{{ url('/createmakanan') }}" method="POST" enctype="multipart/form-data">
                     @csrf
             <div class="form-group">
                 <label for="nama">Nama</label>
@@ -96,9 +96,9 @@
                         <div class="text-danger">{{ $message }}</div>
                     @enderror
                 </div>
-            <div class="form-group">
+                <div class="form-group">
                 <label for="gambar">Gambar</label>
-                    <input class="form-control" type="text" name="gambar" id="gambar">
+                    <input class="form-control-file" type="file" name="gambar" id="gambar">
                 </div>
                         <button  class="btn btn-primary" style="margin-left: 650px; font-size: 20px;" type="submit">Submit</button>
                 </form>

@@ -44,6 +44,7 @@
 
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800">Dashboard</h1>
+          <h5 class="h5 mb-4 text-gray-800">Welcome Admin</h5>
               
         </div>
         <!-- /.container-fluid -->

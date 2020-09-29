@@ -29,7 +29,7 @@
 </div>
 
 <!-- Nav Item - Pages Collapse Menu -->
-<!-- <li class="nav-item">
+<li class="nav-item">
   <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
     <i class="fas fa-fw fa-cog"></i>
     <span>Components</span>
@@ -41,10 +41,10 @@
       <a class="collapse-item" href="cards.html">Cards</a>
     </div>
   </div>
-</li> -->
+</li>
 
 <!-- Nav Item - Utilities Collapse Menu -->
-<!-- <li class="nav-item">
+<li class="nav-item">
   <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
     <i class="fas fa-fw fa-wrench"></i>
     <span>Utilities</span>
@@ -58,7 +58,7 @@
       <a class="collapse-item" href="utilities-other.html">Other</a>
     </div>
   </div>
-</li> -->
+</li>
 
 <!-- Divider -->
 <hr class="sidebar-divider">
@@ -76,23 +76,25 @@
   </a>
   <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
     <div class="bg-white py-2 collapse-inner rounded">
-      <!-- <h6 class="collapse-header">Login Screens:</h6>
-      <a class="collapse-item" href="/login">Login</a>
+      <a class="collapse-item" href="/loginn">Login</a>
       <a class="collapse-item" href="/register">Register</a>
-      <a class="collapse-item" href="forgot-password.html">Forgot Password</a> -->
       <div class="collapse-divider"></div>
       <a class="collapse-item" href="404.html">Riwayat Pesanan</a>
-      <a class="collapse-item active" href="blank.html">Blank Page</a>
     </div>
   </div>
 </li>
 
 <!-- Nav Item - Tables -->
 <li class="nav-item">
-  <a class="nav-link" href="/makanan">
-    <i class="fas fa-fw fa-table"></i>
-    <span>Tables</span></a>
-</li>
+      <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTables" aria-expanded="true" aria-controls="collapseTables">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Table</span>
+      </a>
+      <div id="collapseTables" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+    <div class="bg-white py-2 collapse-inner rounded">
+      <a class="collapse-item" href="/transaksi">Table Transaksi</a>
+      <a class="collapse-item" href="/makan">Menu Makanan</a>
+  </div>
 
 <!-- Divider -->
 <hr class="sidebar-divider d-none d-md-block">

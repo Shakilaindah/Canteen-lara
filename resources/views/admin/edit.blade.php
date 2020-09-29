@@ -54,7 +54,7 @@
                         <div class="card-body">
                             <br/>
                             
-                            <form method="post" action="/update/{{ $makanan->id }}">
+                            <form method="post" action="/update/{{ $makanan->id_makanan }}">
         
                                 {{ csrf_field() }}
                                 {{ method_field('PUT') }}
@@ -90,17 +90,17 @@
                                         <input type="text" name="stok" class="form-control" value="{{ $makanan->stok }}">
                                     </div>
         
-                                <div class="form-group">
+                                    <div class="form-group">
                                 <label for="">Gambar</label>
-                                    @if($errors->has('gambar'))
+                                @if($errors->has('gambar'))
                                         <div class="text-danger">
                                             {{ $errors->first('gambar')}}
                                         </div>
                                     @endif
-                                    <input type="text" name="gambar" class="form-control" value="{{ $makanan->gambar }}">
+                                    <input type="text" name="gambar" class="form-control-file" value="{{ $makanan->gambar }}">
                                 </div>
 
-                                {{-- <div class="form-group">
+                                <!-- {{-- <div class="form-group">
                                 <label for="">Isi cuplikan</label>
                                     @if($errors->has('cuplikan'))
                                         <div class="text-danger">
@@ -108,10 +108,10 @@
                                         </div>
                                     @endif
                                     <input type="text" name="cuplikan" class="form-control" value="{{ $makanan->cuplikan }}">
-                                </div>
+                                </div> -->
 
                                 
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                 <label for="">Deskripsi Makanan</label>
                                     @if($errors->has('des'))
                                         <div class="text-danger">
@@ -119,7 +119,7 @@
                                         </div>
                                     @endif
                                     <textarea name="deskripsi" class="form-control">{{ $makanan->deskripsi }} </textarea>
-                                </div> --}}
+                                </div> --}} -->
 
                                 
 

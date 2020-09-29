@@ -39,7 +39,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    @include('admin.include.sidebar')
+    @include('user.partial.sidebar')
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -49,20 +49,20 @@
       <div id="content">
 
         <!-- Topbar -->
-        @include('admin.include.topbar')
+        @include('user.partial.topbar')
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          {{-- <h1 class="h3 mb-4 text-gray-800 text-center">Table</h1> --}}
+          <!-- {{-- <h1 class="h3 mb-4 text-gray-800 text-center">Table</h1> --}} -->
           <!-- Begin Page Content -->
         <div class="container-fluid">
 
           <!-- Page Heading -->
           <h1 class="h3 mb-2 text-gray-800">Tambah Produk</h1>
-            {{-- <a href="/form_makanan" class="btn btn-primary">Tambah Makanan</a> --}}
+            <!-- {{-- <a href="/form_makanan" class="btn btn-primary">Tambah Makanan</a> --}} -->
           <p></p>
 
     <div class="container pt-4">

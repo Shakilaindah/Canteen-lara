@@ -52,13 +52,12 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          {{-- <h1 class="h3 mb-4 text-gray-800 text-center">Table</h1> --}}
+          <!-- {{-- <h1 class="h3 mb-4 text-gray-800 text-center">Table</h1> --}} -->
           <!-- Begin Page Content -->
         <div class="container-fluid">
 
           <!-- Page Heading -->
           <h1 class="h3 mb-2 text-gray-800">LIST MAKANAN</h1>
-            <a href="/createmakanan/form" class="btn btn-primary">Tambah Makanan</a>
           <p></p>
 
           <!-- DataTales Example -->
@@ -76,7 +75,7 @@
                   </thead>
                   
                   <tbody>
-                    @foreach ($makanann as $u)
+                    @foreach ($makanan as $u)
                     <tr>
                       <th scope="row">{{ $u->id }}</th>
                       <td>{{ $u->nama }}</td>
@@ -95,4 +94,4 @@
 
       </div>
       <!-- End of Main Content -->
-@include('admin.include.footer')
+@include('user.partial.footer')
